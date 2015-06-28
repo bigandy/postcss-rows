@@ -1,0 +1,17 @@
+{
+  "name": "postcss-rows",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "balanced-match": "^0.2.0",
+    "postcss": "^4.1.13",
+    "postcss-message-helpers": "^2.0.0",
+    "var": "^0.1.3"
+  }
+}
