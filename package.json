@@ -1,14 +1,23 @@
 {
   "name": "postcss-rows",
   "version": "0.0.2",
-  "description": "Using the rows unit to represent vertical spacing from a design document",
+  "description": "A postcss plugin using the rows unit to represent vertical spacing from a design document",
+  "keywords": [
+      "postcss",
+      "css",
+      "postcss-plugin"
+  ],
+  "author": "Andrew JD Hudson <ahudson@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bigandy/postcss-rows.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Andrew JD Hudson",
-  "license": "ISC",
-  "devDependencies": {
-    "postcss": "^4.1.13",
+  "dependencies": {
+    "postcss": "^4.1.11"
   }
 }
