@@ -32,7 +32,7 @@ Default:
 }
 ```
 
-- `units` (String) the name of the unit you want to use e.g. 20*rows*.
+- `units` (String) the name of the unit you want to use e.g. 20__rows__.
 - `multiplier` (Number) number of pixels each unit equates to.
 
 ## Usage
