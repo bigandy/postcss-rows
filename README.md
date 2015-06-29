@@ -1,7 +1,7 @@
 # postcss-rows
 [PostCSS]: https://github.com/postcss/postcss
 
-A [PostCSS] plugin to create a custom vertical rhythm unit from the base font-size and line-height.
+A [PostCSS] plugin using the rows unit to represent vertical spacing from a design document.
 
 ## Examples
 

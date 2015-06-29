@@ -1,6 +1,6 @@
 {
   "name": "postcss-rows",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Using the rows unit to represent vertical spacing from a design document",
   "main": "index.js",
   "scripts": {
