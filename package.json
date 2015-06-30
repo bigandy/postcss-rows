@@ -1,6 +1,6 @@
 {
   "name": "postcss-rows",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A postcss plugin using the rows unit to represent vertical spacing from a design document",
   "keywords": [
       "postcss",

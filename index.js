@@ -18,15 +18,16 @@ module.exports = postcss.plugin('postcss-rows', function (opts) {
 
   	return function (css) {
 		css.eachDecl(function transformDecl (decl) {
+			// check if the declaration has units within it.
+			if (decl.value.indexOf(units) !== -1) {
+				var regexp = new RegExp('(\\d*\\.?\\d+)' + units, 'gi');
 
-			// Use new RegExp to capture var
-			// var regexp = new RegExp('/rows\([0-9]*.\)/gim');
-			var regexp = new RegExp('(\\d*\\.?\\d+)' + units, 'gi');
+				// Replace each unit value in the decl.value
+				decl.value = decl.value.replace(regexp, function ($1) {
+					return valueMultiplier($1, multiplier) + 'px';
+				});
+			}
 
-			// Replace each vr unit value in the decl.value, e.g. shorthand properties.
-			decl.value = decl.value.replace(regexp, function ($1) {
-				return valueMultiplier($1, multiplier) + 'px';
-			});
     	});
   	};
 });
