@@ -17,7 +17,7 @@ module.exports = postcss.plugin('postcss-rows', function (opts) {
 	var units = opts.units || 'rows';
 
   	return function (css) {
-		css.eachDecl(function transformDecl (decl) {
+		css.walkDecls(function transformDecl (decl) {
 			// check if the declaration has units within it.
 			if (decl.value.indexOf(units) !== -1) {
 				var regexp = new RegExp('(\\d*\\.?\\d+)' + units, 'gi');

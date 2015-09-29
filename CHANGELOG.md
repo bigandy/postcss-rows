@@ -1,4 +1,4 @@
-## v0.1.1
+## v0.1.2
 - Support postcss 5, swap out eachDecl for walkDecls
 
 ## v0.0.2
